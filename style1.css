@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.container {
+  
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: #333;
+  color: white;
+}
+.logo {
+  padding: 20px;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+.icons{
+  display: none;
+  color: white;
+  padding: 20px;
+}
+.icon:hover{
+  background-color: darkgray;
+}
+.navbar a:hover {
+  background-color: darkgray;
+}
+
+.navbar a.icon {
+  display: none; 
+}
+.icon {
+  width: 20px;
+}
+@media screen and (max-width: 768px) {
+  .navbar a {
+    display: none;
+  }
+
+  .icons {
+    display: block;
+  }
+  
+}
